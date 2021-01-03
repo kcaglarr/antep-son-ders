@@ -1,0 +1,39 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Antep Bootcamp Swagger Example",
+        "contact": {
+            "name": "Kerim Çağlar",
+            "email": "kerim.caglarr@gmail.com"
+        },
+        "version": "1.0.0"
+    },
+    "paths": {
+        "/users": {
+            "get": {
+                "operationId": "App\\Http\\Controllers\\UserController::index",
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    },
+                    "404": {
+                        "description": "Not found"
+                    }
+                }
+            }
+        },
+        "/save-users": {
+            "post": {
+                "operationId": "App\\Http\\Controllers\\UserController::store",
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            }
+        }
+    },
+    "security": [
+        []
+    ]
+}
